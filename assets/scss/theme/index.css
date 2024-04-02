@@ -1,0 +1,1041 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Portlu - personal portfolio & agency HTML5 Template
+    Author: wellconcept
+    Support: wellconcept@hotmail.com
+    Description: personal portfolio & agency HTML5 Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+	-----------------
+    01. THEME CSS
+	-----------------
+		1.1 Mixins
+		1.2 Root
+		1.3 Typography
+		1.4 Extends
+		1.5 Colors
+		1.6 Breakpoint
+		1.7 Index
+		1.8 Main
+
+	-----------------
+    02. COMPONENTS CSS
+	-----------------
+		2.1 Accordion
+		2.2 Animation
+		2.3 Background
+		2.4 Back to top
+		2.5 Breadcrumb
+		2.6 Carousel 
+		2.7 Forms
+		2.8 list
+		2.9 Offcanvas
+		2.10 Pagination
+		2.11 Preloader
+		2.12 Section Title
+		2.13 Shortcodes
+		2.14 Tab
+		2.15 Tooltip
+		2.16 index
+
+
+	-----------------
+    03. HEADER CSS
+	-----------------
+		3.1 Header-1
+		3.2 Header-2
+		3.3 Header common
+		3.4 Header to top
+		3.5 index
+
+    ---------------------------------
+	04. MENU CSS
+	---------------------------------
+		4.1 Meanmenu
+		4.2 Menu
+		4.3 index
+
+	---------------------------------
+	05. BLOG CSS
+	---------------------------------
+		5.1 Blog css
+		5.2 Postbox css
+		5.3 Recent post css
+		5.4 Sidebar css
+		5.5 index
+
+	---------------------------------
+	06. FOOTER CSS
+	---------------------------------
+		6.1 Footer
+		6.2 Footer copyright
+		6.3 index
+
+	---------------------------------
+	07. PAGES CSS
+	---------------------------------
+		7.1 About css
+		7.2 Award css
+		7.3 Brand css
+		7.4 Contact css
+		7.5 Counter css
+		7.6 Cta css
+		7.7 Demo css
+		7.8 Error css
+		7.9 Faq css
+		7.10 Feature css
+		7.11 Job css
+		7.12 Login css
+		7.13 Portfolio css
+		7.14 Pricing css
+		7.15 Progress css
+		7.16 Service css
+		7.17 Skill css
+		7.18 Slider css
+		7.19 Subscribe css
+		7.20 Team css
+		7.21 Testimonial css
+		7.22 Video css
+		7.23 Widget css
+		7.24 video css
+		7.25 Index css
+
+/*----------------------------------------*/
+/*  1.1 Theme Default
+/*----------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Outfit:wght@300;400;500;600;700&display=swap");
+.body__overlay, a,
+.btn,
+button,
+span,
+sub,
+sup,
+p,
+input,
+select,
+textarea,
+li,
+img,
+svg,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, i[class^=flaticon-] {
+  transition: all 0.3s 0s ease-out;
+}
+
+.bg-theme-primary {
+  background-color: var(--bd-theme-primary);
+}
+
+.bg-theme-secondary {
+  background-color: var(--bd-theme-secondary);
+}
+
+.bd-common-white {
+  background-color: var(--bd-common-white);
+}
+
+.bd-bg-secondary {
+  background: var(--bd-bg-secondary);
+}
+
+.bd-bg-tertiary {
+  background: var(--bd-bg-tertiary);
+}
+
+.bd-bg-quaternary {
+  background: var(--bd-bg-quaternary);
+}
+
+:root {
+  /**
+  @font family declaration
+  */
+  --bd-ff-body: 'DM Sans', sans-serif;
+  --bd-ff-heading: 'Outfit', sans-serif;
+  --bd-ff-p: 'DM Sans', sans-serif;
+  --bd-ff-fontawesome: "Font Awesome 6 Pro";
+  --bd-ff-icomoon: "icomoon";
+  /**
+  @color declaration
+  */
+  --bd-common-white: #ffffff;
+  --bd-common-black: #000000;
+  --bd-common-placeholder: #7F8387;
+  --bd-common-selection: #262626;
+  --bd-body-primary: #121314;
+  --bd-body-secondary: #ffffff;
+  --bd-theme-primary: #4286F4;
+  --bd-theme-secondary: #376EC6;
+  --bd-text-body: #84888C;
+  --bd-text-primary: #ffffff;
+  --bd-text-secondary: #BFB8B8;
+  --bd-text-tertiary: #E2E4E6;
+  --bd-text-grey: #A69D9C;
+  --bd-text-lightest: #d1d1d1;
+  --bd-text-light-grey: #D2D2D2;
+  --bd-bg-primary: #161718;
+  --bd-bg-secondary: #1D1E1F;
+  --bd-bg-tertiary: #434348;
+  --bd-bg-quaternary: #22272C;
+  --bd-border-primary: rgba(255, 255, 255, 0.1);
+  --bd-border-secondary: #353535;
+  --bd-border-tertiary: #232426;
+  --bd-gradient-1: linear-gradient(180deg, rgb(53, 53, 53) 0%, rgba(53, 53, 53, 0) 100%);
+  --bd-gradient-2: linear-gradient(90deg, #4286F4 0%, #6409D8 110.71%);
+  --bd-gradient-3: linear-gradient(136deg, #4286F4 1.44%, #6409D8 90.3%);
+  --bd-gradient-4: linear-gradient(90deg, #4286F4 0%, #630DD9 100%);
+  --bd-gradient-5: linear-gradient(99deg, #4286F4 4.72%, #6409D8 93.01%);
+  --bd-gradient-6: linear-gradient(45.39deg, rgb(66, 134, 244) 0%, rgb(100, 9, 216) 100%);
+  --bd-rgba-1: rgba(14, 100, 228, 0.1);
+  --bd-rgba-2: rgba(66, 134, 244, 0.2);
+  --bd-rgba-3: rgba(255, 255, 255, 0.7);
+  --bd-rgba-4: rgba(66, 134, 244, 0.8);
+  --bd-rgba-5: rgba(66, 134, 244, 0.7);
+  /**
+  @font weight declaration
+  */
+  --bd-fw-normal: normal;
+  --bd-fw-thin: 100;
+  --bd-fw-elight: 200;
+  --bd-fw-light: 300;
+  --bd-fw-regular: 400;
+  --bd-fw-medium: 500;
+  --bd-fw-sbold: 600;
+  --bd-fw-bold: 700;
+  --bd-fw-ebold: 800;
+  --bd-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --bd-fs-body: 16px;
+  --bd-fs-p: 18px;
+  --bd-fs-h1: 62px;
+  --bd-fs-h2: 48px;
+  --bd-fs-h3: 40px;
+  --bd-fs-h4: 32px;
+  --bd-fs-h5: 25px;
+  --bd-fs-h6: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+/*---------------------------------
+    Typography css start 
+---------------------------------*/
+body {
+  font-family: var(--bd-ff-body);
+  font-size: var(--bd-fs-body);
+  font-weight: normal;
+  color: var(--bd-text-body);
+  line-height: 1.5;
+  background: var(--bd-body-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bd-ff-heading);
+  color: var(--bd-text-primary);
+  margin-top: 0px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  font-weight: var(--bd-fw-sbold);
+  word-break: break-word;
+}
+
+h1 {
+  font-size: var(--bd-fs-h1);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width:450px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+h1.large {
+  font-size: 64px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h1.large {
+    font-size: 55px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h1.large {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h1.large {
+    font-size: 40px;
+  }
+}
+@media (max-width:450px) {
+  h1.large {
+    font-size: 35px;
+  }
+}
+h1.xlarge {
+  font-size: 90px;
+  letter-spacing: -1.8px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  h1.xlarge {
+    font-size: 80px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h1.xlarge {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h1.xlarge {
+    font-size: 60px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  h1.xlarge {
+    font-size: 50px;
+  }
+}
+@media (max-width: 575px) {
+  h1.xlarge {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: var(--bd-fs-h2);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  h2 {
+    font-size: 33px;
+  }
+}
+@media (max-width: 575px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+h2.large {
+  font-size: 50px;
+  line-height: 1;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h2.large {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h2.large {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h2.large {
+    font-size: 35px;
+  }
+}
+h2.small {
+  font-size: 40px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h2.small {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h2.small {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: var(--bd-fs-h3);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  h3 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 575px) {
+  h3 {
+    font-size: 30px;
+  }
+}
+h3.large {
+  font-size: 38px;
+  line-height: 1.1;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h3.large {
+    font-size: 34px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  h3.large {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h3.large {
+    font-size: 28px;
+  }
+}
+
+h4 {
+  font-size: var(--bd-fs-h4);
+  line-height: 1.28;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h4 {
+    font-size: 26px;
+  }
+}
+@media (max-width:450px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+h4.small {
+  font-size: 28px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h4.small {
+    font-size: 26px;
+  }
+}
+@media (max-width:450px) {
+  h4.small {
+    font-size: 24px;
+  }
+}
+
+h5 {
+  font-size: var(--bd-fs-h5);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  h5 {
+    font-size: 23px;
+  }
+}
+h5.large {
+  font-size: 24px;
+  line-height: 1.28;
+}
+@media (max-width: 575px) {
+  h5.large {
+    font-size: 22px;
+  }
+}
+h5.small {
+  font-size: 20px;
+}
+@media (max-width: 575px) {
+  h5.small {
+    font-size: 18px;
+  }
+}
+
+h6 {
+  font-size: var(--bd-fs-h6);
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-size: var(--bd-fs-body);
+  font-family: var(--bd-ff-p);
+  font-weight: var(--bd-fw-normal);
+  color: var(--bd-text-body);
+  margin-bottom: 0;
+  line-height: 28px;
+}
+
+p.b1 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+p.b2 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+p.b3 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+button {
+  color: inherit;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+hr:not([size]) {
+  margin: 0;
+  border-color: var(--bd-border-primary);
+  opacity: 1;
+  border-width: 1px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=password],
+textarea {
+  outline: none;
+  background-color: var(--bd-bg-1);
+  height: 60px;
+  width: 100%;
+  font-size: 16px;
+  color: rgba(124, 126, 130, 0.69);
+  border: none;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 20px;
+  color: var(--bd-common-white);
+}
+.bd-theme-light input[type=text],
+.bd-theme-light input[type=email],
+.bd-theme-light input[type=tel],
+.bd-theme-light input[type=number],
+.bd-theme-light input[type=password],
+.bd-theme-light textarea {
+  background-color: rgba(235, 235, 235, 0.9);
+  color: rgba(124, 126, 130, 0.69);
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+textarea:focus {
+  border-color: var(--bd-theme-primary);
+}
+
+*::-moz-selection {
+  background: var(--bd-theme-primary);
+  color: var(--bd-common-white);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--bd-theme-primary);
+  color: var(--bd-common-white);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--bd-theme-primary);
+  color: var(--bd-common-white);
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  opacity: 1;
+  font-size: 16px;
+  color: var(--bd-common-placeholder);
+}
+
+*::placeholder {
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--bd-ff-heading);
+  color: var(--bd-common-placeholder);
+}
+
+/*----------------------------------------
+   Flaction customize
+-----------------------------------------*/
+i[class^=flaticon-] {
+  line-height: 1;
+  top: 2px;
+  position: relative;
+}
+
+/*----------------------------------------
+   icomoon customize
+-----------------------------------------*/
+i[class^=icon-] {
+  line-height: 1;
+  top: 0px;
+  position: relative;
+}
+
+/*----------------------------------------
+   Bootstrap customize
+-----------------------------------------*/
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 3rem;
+}
+
+@media (min-width: 1441px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1280px;
+  }
+}
+.row {
+  --bs-gutter-x: 3rem;
+}
+
+.g-30,
+.gx-30 {
+  --bs-gutter-x: 30px;
+}
+
+.g-30,
+.gy-30 {
+  --bs-gutter-y: 30px;
+}
+
+.g-40,
+.gx-40 {
+  --bs-gutter-x: 40px;
+}
+
+.g-40,
+.gy-40 {
+  --bs-gutter-y: 40px;
+}
+
+.g-50,
+.gx-50 {
+  --bs-gutter-x: 50px;
+}
+
+.g-50,
+.gy-50 {
+  --bs-gutter-y: 50px;
+}
+
+.g-60,
+.gy-60 {
+  --bs-gutter-y: 60px;
+}
+
+/*---------------------------------
+    1.2 Common Classes
+---------------------------------*/
+.w-img img {
+  width: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-img img {
+  max-width: 100%;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-11 {
+  z-index: 11;
+}
+
+.opacity-05 {
+  opacity: 0.5;
+}
+
+.overflow-y-visible {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.include-bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hr-1 {
+  border-top: 1px solid rgb(232, 232, 232);
+}
+
+.x-clip {
+  overflow-x: clip;
+}
+
+@media (max-width: 575px) {
+  .o-xs {
+    overflow-x: hidden;
+  }
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.valign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+/*----------------------------------------
+    text underline 
+-----------------------------------------*/
+.underline a {
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+  background-size: 0% 1px, 0 1px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s linear;
+}
+.underline a:hover {
+  background-size: 0 1px, 100% 1px;
+  color: var(--bd-common-white);
+}
+
+/*----------------------------------------
+    text full-underline 
+-----------------------------------------*/
+.underline-full > h5::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  bottom: -5px;
+}
+
+.bd-icon i {
+  color: #EAAF18;
+}
+
+/*----------------------------------------
+    Body Overlay 
+-----------------------------------------*/
+.body__overlay {
+  background-color: var(--bd-common-heading);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.body__overlay {
+  background-color: var(--bd-common-heading);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.body__overlay.opened {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.bg__thumb-position {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/*----------------------------------------
+   Mfp customize
+-----------------------------------------*/
+.mfp-iframe-holder .mfp-content {
+  line-height: 0;
+  width: 100%;
+  max-width: 1280px;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .mfp-iframe-holder .mfp-content {
+    max-width: 1000px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .mfp-iframe-holder .mfp-content {
+    max-width: 850px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mfp-iframe-holder .mfp-content {
+    max-width: 820px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mfp-iframe-holder .mfp-content {
+    max-width: 750px;
+  }
+}
+
+.mfp-close {
+  transform: rotate(0deg);
+}
+.mfp-close:hover {
+  color: var(--bd-common-white);
+}
+.mfp-close::after {
+  position: absolute;
+  content: "\f00d";
+  height: 100%;
+  width: 100%;
+  font-family: var(--bd-ff-fontawesome);
+  font-size: 31px;
+  font-weight: 200;
+  right: -20px;
+  margin-top: -25px;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .mfp-close::after {
+    right: 15px;
+    margin-top: -30px;
+  }
+}
+
+/*---------------------------------
+	1.3 Default Spacing
+---------------------------------*/
+.section-space {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-space {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .section-space {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.section-space-medium {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-space-medium {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .section-space-medium {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.section-space-top {
+  padding-top: 100px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-space-top {
+    padding-top: 80px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .section-space-top {
+    padding-top: 65px;
+  }
+}
+
+.section-space-bottom {
+  padding-bottom: 100px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-space-bottom {
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .section-space-bottom {
+    padding-bottom: 65px;
+  }
+}
+
+.section__title-space {
+  margin-bottom: 50px;
+}
+
+.btn__wrapper {
+  margin-top: 40px;
+}
+@media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .btn__wrapper {
+    margin-top: 30px;
+  }
+}
+
+.footer-space-top {
+  padding-top: 100px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-space-top {
+    padding-top: 80px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .footer-space-top {
+    padding-top: 65px;
+  }
+}
+
+.is-sec-space {
+  padding: 60px 60px 65px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .is-sec-space {
+    padding: 40px 50px 50px;
+  }
+}
+@media (max-width: 575px) {
+  .is-sec-space {
+    padding: 40px 25px;
+  }
+}/*# sourceMappingURL=index.css.map */

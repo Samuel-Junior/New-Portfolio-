@@ -1,0 +1,94 @@
+.bg-theme-primary {
+  background-color: var(--bd-theme-primary);
+}
+
+.bg-theme-secondary {
+  background-color: var(--bd-theme-secondary);
+}
+
+.bd-common-white {
+  background-color: var(--bd-common-white);
+}
+
+.bd-bg-secondary {
+  background: var(--bd-bg-secondary);
+}
+
+.bd-bg-tertiary {
+  background: var(--bd-bg-tertiary);
+}
+
+.bd-bg-quaternary {
+  background: var(--bd-bg-quaternary);
+}
+
+:root {
+  /**
+  @font family declaration
+  */
+  --bd-ff-body: 'DM Sans', sans-serif;
+  --bd-ff-heading: 'Outfit', sans-serif;
+  --bd-ff-p: 'DM Sans', sans-serif;
+  --bd-ff-fontawesome: "Font Awesome 6 Pro";
+  --bd-ff-icomoon: "icomoon";
+  /**
+  @color declaration
+  */
+  --bd-common-white: #ffffff;
+  --bd-common-black: #000000;
+  --bd-common-placeholder: #7F8387;
+  --bd-common-selection: #262626;
+  --bd-body-primary: #121314;
+  --bd-body-secondary: #ffffff;
+  --bd-theme-primary: #4286F4;
+  --bd-theme-secondary: #376EC6;
+  --bd-text-body: #84888C;
+  --bd-text-primary: #ffffff;
+  --bd-text-secondary: #BFB8B8;
+  --bd-text-tertiary: #E2E4E6;
+  --bd-text-grey: #A69D9C;
+  --bd-text-lightest: #d1d1d1;
+  --bd-text-light-grey: #D2D2D2;
+  --bd-bg-primary: #161718;
+  --bd-bg-secondary: #1D1E1F;
+  --bd-bg-tertiary: #434348;
+  --bd-bg-quaternary: #22272C;
+  --bd-border-primary: rgba(255, 255, 255, 0.1);
+  --bd-border-secondary: #353535;
+  --bd-border-tertiary: #232426;
+  --bd-gradient-1: linear-gradient(180deg, rgb(53, 53, 53) 0%, rgba(53, 53, 53, 0) 100%);
+  --bd-gradient-2: linear-gradient(90deg, #4286F4 0%, #6409D8 110.71%);
+  --bd-gradient-3: linear-gradient(136deg, #4286F4 1.44%, #6409D8 90.3%);
+  --bd-gradient-4: linear-gradient(90deg, #4286F4 0%, #630DD9 100%);
+  --bd-gradient-5: linear-gradient(99deg, #4286F4 4.72%, #6409D8 93.01%);
+  --bd-gradient-6: linear-gradient(45.39deg, rgb(66, 134, 244) 0%, rgb(100, 9, 216) 100%);
+  --bd-rgba-1: rgba(14, 100, 228, 0.1);
+  --bd-rgba-2: rgba(66, 134, 244, 0.2);
+  --bd-rgba-3: rgba(255, 255, 255, 0.7);
+  --bd-rgba-4: rgba(66, 134, 244, 0.8);
+  --bd-rgba-5: rgba(66, 134, 244, 0.7);
+  /**
+  @font weight declaration
+  */
+  --bd-fw-normal: normal;
+  --bd-fw-thin: 100;
+  --bd-fw-elight: 200;
+  --bd-fw-light: 300;
+  --bd-fw-regular: 400;
+  --bd-fw-medium: 500;
+  --bd-fw-sbold: 600;
+  --bd-fw-bold: 700;
+  --bd-fw-ebold: 800;
+  --bd-fw-black: 900;
+  /**
+  @font size declaration
+  */
+  --bd-fs-body: 16px;
+  --bd-fs-p: 18px;
+  --bd-fs-h1: 62px;
+  --bd-fs-h2: 48px;
+  --bd-fs-h3: 40px;
+  --bd-fs-h4: 32px;
+  --bd-fs-h5: 25px;
+  --bd-fs-h6: 20px;
+}/*# sourceMappingURL=index.css.map */
